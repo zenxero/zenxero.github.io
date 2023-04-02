@@ -8,7 +8,7 @@ tags: windows defender security
 
 # WTF Windows Defender?
 
-While working on a batch/powershell script to automate the disabling of a lot of Windows settings, Windows Defender decided that the README for my script was a threat. This was obviously a false positive as it thought the README was a threat and not any of the actual powershell scripts. Anyways, I deleted the folder once I was done, but I didn't bother to select one of the action options I Defender. Little did I know that Defender would continue to alert me over the README "threat" that no longer existed on the filesystem.
+While working on a batch/powershell script to automate the disabling of numerous of Windows settings, Windows Defender decided that the README for my script was a threat. This was obviously a false positive as it thought the README was a threat and not any of the actual powershell scripts. Anyways, I deleted the folder once I was done, but I didn't bother to select one of the action options I Defender. Little did I know that Defender would continue to alert me over the README "threat" that no longer existed on the filesystem.
 
 Apparently, since I didn't "take action" from within the Defender control panel and deleted the file outside of it, Defender would keep alerting me over this "threat" forever. I tried to use the options that Defender provides like "Quarantine", "Remove", or "Allow", but nothing happened. LIKELY BECAUSE THE FILE NO LONGER EXISTS.
 

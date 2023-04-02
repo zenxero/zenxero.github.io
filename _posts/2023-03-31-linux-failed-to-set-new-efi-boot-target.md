@@ -6,15 +6,13 @@ categories: linux
 tags: linux fedora uefi
 ---
 
-# This is a new one.
+# Too many dumps.
 
 Recently, during a fresh Fedora Linux install on my laptop, I encountered an interesting error that I've never seen before. The installer would get stuck and fail with this error:
 
 "Failed to set new efi boot target. This is most likely a kernel or firmware bug."
 
-What? I've done Linux and Windows installs on this laptop before, and I've never encountered this. In all my years of being a Linux sysadmin I've never seen this error.
-
-Well, it seems I'm far from the only one that's encountered this. Apparently, the EFI of the machine can get filled up with "dump" files. The solution is to delete them from a Linux live boot media.
+What? I've done multiple Linux and Windows installs on this laptop before, and I've never seen this. Well, it seems I'm not the only one who's encountered this error. Apparently, the EFI of the machine can get filled up with excess "dump" files. The solution is to delete them from a Linux live boot media.
 
 ```bash
 rm /sys/firmware/efi/efivars/dump-*
